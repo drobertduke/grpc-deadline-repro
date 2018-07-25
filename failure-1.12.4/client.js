@@ -18,7 +18,7 @@ const EchoServiceClient = netflixGrpcRuntimeCore.clientConfigurer
   .withPropertiesPrefix('grpc.client.grpcechoservice.EchoService')
   .withPropertiesStatic({
     'channel.target': serverEndpoints.dns,
-    'client.pool.rotation.ms': '1'
+    'client.pool.rotation.ms': '1000'
   }).configure();
 
 function main() {
